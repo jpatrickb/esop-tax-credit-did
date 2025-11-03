@@ -1,0 +1,8 @@
+# Data Files
+*.zip
+*.txt
+
+# IDE files
+.DS_Store
+.vscode/
+.idea/
