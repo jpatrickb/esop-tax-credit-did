@@ -9,6 +9,10 @@ This repository houses data, analysis, and reports examining the causal effect o
 
 Our analysis using Department of Labor Form 5500 filings (2012-2025) with a difference-in-differences design comparing Colorado to Utah reveals:
 
+For full details, see the [final paper](report/tex/esop_paper_final.tex).
+
+
+
 - **Limited policy effects**: Small and mostly statistically insignificant increases in ESOP participation and assets
 - **Marginal significance**: Only total ESOP assets showed marginal significance at the 10% level (~$2.9 million increase, representing ~9% relative to baseline)
 - **Participation outcomes**: ESOP firm indicator increased 0.6 percentage points (insignificant); total participants and active participants showed ~9% point estimates but lacked statistical precision
