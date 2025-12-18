@@ -1,36 +1,47 @@
 # ESOP Tax Credit Research Project
 
 ## Purpose
-This repository houses data, analysis, and reports to answer the following causal questions:
+This repository houses data, analysis, and reports examining the causal effect of Colorado's HB17-1214, an employee ownership support program enacted in 2017, on firm-level ESOP participation and asset accumulation.
 
-**Primary:** _What is the effect of the Colorado Employee Ownership Tax Credit on firm-level ESOP participation and asset accumulation?_
+**Research Question:** _What is the effect of Colorado's HB17-1214 employee ownership support program on firm-level ESOP participation and asset accumulation?_
 
-**Secondary:** _Does an exogenous increase in ESOP participation (induced by the tax credit) increase firm-level employment or wages?_
+## Key Findings
 
-## Identification Strategies
-To do this, we employ the following identification strategies:
+Our analysis using Department of Labor Form 5500 filings (2012-2025) with a difference-in-differences design comparing Colorado to Utah reveals:
 
-**Difference-in-Differences (DiD):** We compare Colorado firms (Treatment) to Utah firms (Control) before and after the policy implementation.
+- **Limited policy effects**: Small and mostly statistically insignificant increases in ESOP participation and assets
+- **Marginal significance**: Only total ESOP assets showed marginal significance at the 10% level (~$2.9 million increase, representing ~9% relative to baseline)
+- **Participation outcomes**: ESOP firm indicator increased 0.6 percentage points (insignificant); total participants and active participants showed ~9% point estimates but lacked statistical precision
+- **Synthetic control analysis**: Suggested larger effects, but poor pre-treatment fit undermines confidence in these estimates
 
-* Why?: This removes time-invariant differences between the states (e.g., Utah is generally more conservative) and common macroeconomic shocks affecting both states (e.g., a national recession). By keeping the data at the firm level, we can also control for specific firm characteristics if available.
+Our findings suggest education-based and financing-focused employee ownership policies may require longer time horizons or more direct financial incentives to generate substantial ESOP adoption among small and medium-sized businesses.
 
-**Instrumental Variables (2SLS):** If the DiD confirms the tax credit increased participation (a strong First Stage), we use the Tax Credit as an instrument for ESOP Participation.
+## Policy Context
 
-* Why: We want to know if ESOPs create jobs. A direct regression is biased because successful, growing firms are more likely to start ESOPs. The Tax Credit could serve as "random" variation in ESOP adoption unrelated to a specific firm's health.
+Colorado's HB17-1214 (signed by Governor Hickenlooper in 2017) focused on:
+- Educational support through contracted nonprofit organizations specializing in employee ownership
+- Loan program capitalized with $200,000 annual state appropriations (2017-2022) to finance ESOP transitions
+- Eligibility: Small businesses (< $5 million revenue), at least 2 years old with ≥3 employees
 
-## Identifying Assumptions:
-Each identification strategy requires specific assumptions to be met.
+Reported outcomes: 20-25 businesses per year transitioned to employee ownership with program support.
 
-**Diff-In-Diff:** 
+## Methodology
 
-- *Parallel Trends:* In the absence of the tax credit, the trajectory of ESOP participation for firms in Colorado would have tracked that of firms in Utah.  
-- *Compliance:*  
-- *SUTVA:*
+**Difference-in-Differences (DiD):** We compare Colorado firms (treatment, post-2017) to Utah firms (control) and Colorado firms (pre-2017) before and after the 2017 policy implementation. This removes time-invariant differences between states and common macroeconomic shocks.
 
-**IV**
+**Identification Assumptions:**
 
-- *Relevance:* The tax credit significantly lowers cost, causing a measurable increase in ESOP adoption.  
-- *Exogeneity:* The specific timing of the tax credit's passage is unrelated to time-varying, firm-specific unobserved shocks (e.g., a sudden firm-level productivity boom).  
-- *Exclusion:* The tax credit affects the outcome (Employment/Wages) only through the channel of increasing ESOP participation, not directly.  
-- *Monotonicity:* No firm is less likely to start an ESOP simply because the tax credit exists.
+- *Parallel Trends:* Event study analysis confirms Colorado and Utah exhibited parallel trends during pre-treatment period (2012-2016)
+- *Compliance:* HB17-1214 provisions exclusively available in Colorado; Utah enacted no comparable policies
+- *SUTVA (No Spillovers):* Program benefits require Colorado residency; ESOP transitions unlikely influenced by neighboring state policies
+- *Exclusion Restriction:* Policy narrowly targeted education and ESOP-specific financing with modest funding; unlikely to generate substantial spillovers
 
+**Robustness Check:** Synthetic control methodology constructing counterfactual "synthetic Colorado" from weighted combinations of other U.S. states (Iowa and Missouri excluded due to own ESOP legislation).
+
+## Important Limitations
+
+- **Inference constraints**: Treatment assigned at state level while outcomes measured at firm level; with only two states, state-level clustering is infeasible, potentially overstating precision of firm-level estimates
+- **Limited statistical power**: Single treatment state and control state provides minimal variation to distinguish treatment effects from Colorado-specific shocks
+- **Confounding variables**: Pension plan participation depends on firm profitability, employee turnover, competing benefits, and management preferences—state-specific time-varying factors cannot be controlled
+- **Data limitations**: Form 5500 lacks detailed firm characteristics; cannot examine heterogeneous effects by firm size or ESOP structure
+- **Missing coverage**: Analysis may miss smaller ESOPs below Form 5500 reporting thresholds (typically plans with 100+ participants or more complex structures)
