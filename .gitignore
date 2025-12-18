@@ -1,8 +1,27 @@
 # Data Files
 *.zip
 *.txt
+*.dta
+*.csv
 
 # IDE files
 .DS_Store
 .vscode/
 .idea/
+data/Data Dictionaries/form5500_instructions.pdf
+data/Data Dictionaries/form5500_sf_instructions.pdf
+
+# Latex files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.fff
+*.ttt
+*.nav
+*.toc
+*.snm
+*.out
