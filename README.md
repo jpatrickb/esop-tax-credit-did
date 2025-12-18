@@ -9,7 +9,7 @@ This repository houses data, analysis, and reports examining the causal effect o
 
 Our analysis using Department of Labor Form 5500 filings (2012-2025) with a difference-in-differences design comparing Colorado to Utah reveals:
 
-For full details, see the [final paper](report/tex/esop_paper_final.tex).
+For full details, see the [final paper](report/tex/esop_paper_final.pdf).
 
 
 
