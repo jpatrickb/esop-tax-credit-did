@@ -3,6 +3,7 @@
 *.txt
 *.dta
 *.csv
+*.xlsx
 
 # IDE files
 .DS_Store
