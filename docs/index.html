@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESOP Tax Credit Research Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        section h3 {
+            color: #764ba2;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .document-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .doc-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+
+        .doc-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .key-findings {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .methodology-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .research-question {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            border-left: 4px solid #667eea;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .container-narrow {
+            max-width: 800px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .document-links {
+                flex-direction: column;
+            }
+
+            .doc-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ESOP Tax Credit Research Project</h1>
+        <p>Examining the causal effect of Colorado's HB17-1214 on firm-level ESOP participation and asset accumulation</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Project Overview</h2>
+            <p>This research project examines the causal effect of Colorado's HB17-1214, an employee ownership support program enacted in 2017, on firm-level ESOP participation and asset accumulation.</p>
+
+            <div class="research-question">
+                <strong>Research Question:</strong> What is the effect of Colorado's HB17-1214 employee ownership support program on firm-level ESOP participation and asset accumulation?
+            </div>
+
+            <h3>Access the Full Report</h3>
+            <div class="document-links">
+                <a href="esop_paper_final.pdf" class="doc-button">📄 View Final Paper</a>
+                <a href="presentation.pdf" class="doc-button">📊 View Presentation</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Findings</h2>
+            <p>Our analysis using Department of Labor Form 5500 filings (2012-2025) with a difference-in-differences design comparing Colorado to Utah reveals:</p>
+
+            <ul>
+                <li><strong>Limited policy effects:</strong> Small and mostly statistically insignificant increases in ESOP participation and assets</li>
+                <li><strong>Marginal significance:</strong> Only total ESOP assets showed marginal significance at the 10% level (~$2.9 million increase, representing ~9% relative to baseline)</li>
+                <li><strong>Participation outcomes:</strong> ESOP firm indicator increased 0.6 percentage points (insignificant); total participants and active participants showed ~9% point estimates but lacked statistical precision</li>
+                <li><strong>Synthetic control analysis:</strong> Suggested larger effects, but poor pre-treatment fit undermines confidence in these estimates</li>
+            </ul>
+
+            <p style="margin-top: 1rem; font-style: italic;">Our findings suggest education-based and financing-focused employee ownership policies may require longer time horizons or more direct financial incentives to generate substantial ESOP adoption among small and medium-sized businesses.</p>
+        </section>
+
+        <section>
+            <h2>Policy Context</h2>
+            <p>Colorado's HB17-1214 (signed by Governor Hickenlooper in 2017) focused on:</p>
+            <ul>
+                <li>Educational support through contracted nonprofit organizations specializing in employee ownership</li>
+                <li>Loan program capitalized with $200,000 annual state appropriations (2017-2022) to finance ESOP transitions</li>
+                <li>Eligibility: Small businesses (< $5 million revenue), at least 2 years old with ≥3 employees</li>
+            </ul>
+            <p><strong>Reported outcomes:</strong> 20-25 businesses per year transitioned to employee ownership with program support.</p>
+        </section>
+
+        <section>
+            <h2>Methodology</h2>
+
+            <div class="methodology-item">
+                <h3>Difference-in-Differences (DiD)</h3>
+                <p>We compare Colorado firms (treatment, post-2017) to Utah firms (control) and Colorado firms (pre-2017) before and after the 2017 policy implementation. This removes time-invariant differences between states and common macroeconomic shocks.</p>
+            </div>
+
+            <h3>Identification Assumptions</h3>
+            <ul>
+                <li><strong>Parallel Trends:</strong> Event study analysis confirms Colorado and Utah exhibited parallel trends during pre-treatment period (2012-2016)</li>
+                <li><strong>Compliance:</strong> HB17-1214 provisions exclusively available in Colorado; Utah enacted no comparable policies</li>
+                <li><strong>SUTVA (No Spillovers):</strong> Program benefits require Colorado residency; ESOP transitions unlikely influenced by neighboring state policies</li>
+                <li><strong>Exclusion Restriction:</strong> Policy narrowly targeted education and ESOP-specific financing with modest funding; unlikely to generate substantial spillovers</li>
+            </ul>
+
+            <div class="methodology-item">
+                <h3>Robustness Check</h3>
+                <p>Synthetic control methodology constructing counterfactual "synthetic Colorado" from weighted combinations of other U.S. states (Iowa and Missouri excluded due to own ESOP legislation).</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Important Limitations</h2>
+            <ul>
+                <li><strong>Inference constraints:</strong> Treatment assigned at state level while outcomes measured at firm level; with only two states, state-level clustering is infeasible, potentially overstating precision of firm-level estimates</li>
+                <li><strong>Limited statistical power:</strong> Single treatment state and control state provides minimal variation to distinguish treatment effects from Colorado-specific shocks</li>
+                <li><strong>Confounding variables:</strong> Pension plan participation depends on firm profitability, employee turnover, competing benefits, and management preferences—state-specific time-varying factors cannot be controlled</li>
+                <li><strong>Data limitations:</strong> Form 5500 lacks detailed firm characteristics; cannot examine heterogeneous effects by firm size or ESOP structure</li>
+                <li><strong>Missing coverage:</strong> Analysis may miss smaller ESOPs below Form 5500 reporting thresholds (typically plans with 100+ participants or more complex structures)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
